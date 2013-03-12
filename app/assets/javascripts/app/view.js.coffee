@@ -39,7 +39,8 @@ class App.View extends Backbone.View
     {}
 
   renderTemplate: (template, context, partials) ->
-    @_template(template).render context, partials
+    #@_template(template).render context, partials
+    @_template(template) context, partials
 
   show: ->
     @render() unless @_rendered?
@@ -54,4 +55,6 @@ class App.View extends Backbone.View
     # undo other bindings (for example to models or jQuery)
 
   _template: (template) ->
-    HoganTemplates[template]
+    #HoganTemplates[template]
+    HandlebarsTemplates[template]
+

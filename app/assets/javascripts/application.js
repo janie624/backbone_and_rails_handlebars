@@ -1,7 +1,7 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery_ujs
-//= require hogan
+//= require handlebars.runtime
 //= require underscore
 //= require backbone
 //= require backbone.validations
